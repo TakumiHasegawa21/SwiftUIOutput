@@ -17,9 +17,8 @@ struct ContentView: View {
                 // データを繰り返し処理してリストアイテムを作成
                 ForEach(items, id: \.self) { item in
                     NavigationLink(destination: Text(item)) {
-                        // リストアイテムの表示
-                        Text(item)
-                            .frame(minHeight: 50) // セルの高さを変更
+                        // ここでTableViewCellを使用
+                        TableViewCell(item: item)
                     }
                 }
             }
