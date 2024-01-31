@@ -22,6 +22,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .listStyle(InsetListStyle())
             .navigationBarTitle("Table View")
         }
     }
