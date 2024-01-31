@@ -9,14 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    let items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"]
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                // データを繰り返し処理してリストアイテムを作成
+                ForEach(items, id: \.self) { item in
+                    NavigationLink(destination: Text(item)) {
+                        // リストアイテムの表示
+                        Text(item)
+                    }
+                }
+            }
+            .navigationBarTitle("Table View")
         }
-        .padding()
     }
 }
 
