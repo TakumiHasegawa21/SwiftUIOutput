@@ -18,3 +18,5 @@ Storyboard版はこちら(https://github.com/TakumiHasegawa21/storyboardOutput/t
  
 ・作成したmainブランチから`<氏名>/ブランチ名`ブランチを生やし、そこから作業を行ってください  
 　例) `taroYamada/change_indent`
+
+※私の氏名は`richy`で統一しています。
