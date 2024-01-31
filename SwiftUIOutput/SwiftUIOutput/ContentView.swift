@@ -19,10 +19,11 @@ struct ContentView: View {
                     NavigationLink(destination: Text(item)) {
                         // リストアイテムの表示
                         Text(item)
+                            .frame(minHeight: 50) // セルの高さを変更
                     }
                 }
             }
-            .listStyle(InsetListStyle())
+            .listStyle(PlainListStyle())
             .navigationBarTitle("Table View")
         }
     }
