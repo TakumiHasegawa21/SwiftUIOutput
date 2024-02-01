@@ -9,27 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    let data = (1...20).map { "Item \($0)" }
+    let data = [
+        ("Item 1", "star"),
+        ("Item 2", "heart")
+    ]
+
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [GridItem(.flexible())], spacing: 16) {
-                ForEach(data, id: \.self) { _ in
-                    CellView()
+                ForEach(data, id: \.0) { item in
+                    CustomCellView(text: item.0, imageName: item.1)
                         .frame(maxWidth: .infinity)
                         .padding(EdgeInsets(top: 0, leading: 24, bottom: 0, trailing: 24))
                 }
             }
             .padding(16)
-        }
-    }
-}
-
-struct CellView: View {
-    var body: some View {
-        VStack {
-            RoundedRectangle(cornerRadius: 8)
-                .frame(height: 150)
-                .foregroundColor(.blue)
         }
     }
 }
