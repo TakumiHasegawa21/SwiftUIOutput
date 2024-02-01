@@ -9,28 +9,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    let data = Array(1...20) // サンプルデータ
+    let data = (1...20).map { "Item \($0)" }
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: [GridItem(.flexible())]) {
+            LazyVGrid(columns: [GridItem(.flexible(), spacing: 16), GridItem(.flexible(), spacing: 16)], spacing: 16) {
                 ForEach(data, id: \.self) { item in
-                    CellView(item: item)
+                    CellView()
                 }
             }
-            .padding()
+            .padding(16)
         }
     }
 }
 
 struct CellView: View {
-    let item: Int
     var body: some View {
         VStack {
-            Text("Item \(item)")
-                .padding()
-                .background(Color.blue)
-                .foregroundColor(.white)
-                .cornerRadius(8)
+            RoundedRectangle(cornerRadius: 8)
+                .frame(width: 150, height: 150)
+                .foregroundColor(.blue)
         }
     }
 }
