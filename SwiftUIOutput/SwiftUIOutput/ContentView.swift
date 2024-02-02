@@ -12,9 +12,10 @@ struct ContentView: View {
     var body: some View {
         Image("kabigon")
             .resizable()
-            .aspectRatio(contentMode: .fit)
+            // アスペクト比を維持する(はみ出した部分は切り取られる)
+            .scaledToFill()
             .frame(width: 150, height: 200)
-            .background(Color.red)
+            .clipped()
     }
 }
 
