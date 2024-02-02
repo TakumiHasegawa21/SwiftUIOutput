@@ -12,10 +12,11 @@ struct ContentView: View {
     var body: some View {
         Image("kabigon")
             .resizable()
-            // アスペクト比を維持する(はみ出した部分は切り取られる)
             .scaledToFill()
-            .frame(width: 150, height: 200)
-            .clipped()
+            .frame(width: 150, height: 150)
+            // 解答と実装方法が異なっているため要確認
+            .clipShape(Circle())
+            .overlay(Circle().stroke(Color.black, lineWidth: 4))
     }
 }
 
