@@ -10,13 +10,32 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Image("kabigon")
-            .resizable()
-            .scaledToFill()
-            .frame(width: 150, height: 150)
-            // 解答と実装方法が異なっているため要確認
-            .clipShape(Circle())
-            .overlay(Circle().stroke(Color.black, lineWidth: 4))
+        HStack {
+            Image("kabigon")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 50, height: 50)
+            Spacer()
+            Image("kabigon")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 50, height: 50)
+            Spacer()
+            Image("kabigon")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 50, height: 50)
+            Spacer()
+            Image("kabigon")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 50, height: 50)
+            Spacer()
+            Image("kabigon")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 50, height: 50)
+        }
     }
 }
 
