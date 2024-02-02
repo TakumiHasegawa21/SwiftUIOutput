@@ -11,26 +11,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         HStack {
-            Image("kabigon")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-            Spacer()
-            Image("kabigon")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-            Spacer()
-            Image("kabigon")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-            Spacer()
-            Image("kabigon")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
-            Spacer()
+            ForEach(0..<4) { _ in
+                Image("kabigon")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 50, height: 50)
+                Spacer()
+            }
             Image("kabigon")
                 .resizable()
                 .scaledToFill()
