@@ -9,19 +9,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    let fruits = ["Apple", "Banana", "Orange", "Grape", "Cherry", "Peach"]
+
     var body: some View {
-        HStack {
-            ForEach(0..<4) { _ in
-                Image("kabigon")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 50, height: 50)
-                Spacer()
+        NavigationView {
+            List(fruits, id: \.self) { fruit in
+                NavigationLink(destination: SecondView(fruit: fruit)) {
+                    Text(fruit)
+                }
             }
-            Image("kabigon")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 50, height: 50)
         }
     }
 }

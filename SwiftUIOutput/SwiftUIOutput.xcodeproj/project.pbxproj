@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22546A8615900B4A849CA025 /* Pods_SwiftUIOutput.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 906A23C78F1C28D25753F751 /* Pods_SwiftUIOutput.framework */; };
+		CB1B43472B91ABC6001D32D7 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B43462B91ABC6001D32D7 /* SecondView.swift */; };
 		CB2A0A902B6A2448005C8F50 /* SwiftUIOutputApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A0A8F2B6A2448005C8F50 /* SwiftUIOutputApp.swift */; };
 		CB2A0A922B6A2448005C8F50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2A0A912B6A2448005C8F50 /* ContentView.swift */; };
 		CB2A0A942B6A244A005C8F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2A0A932B6A244A005C8F50 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* Begin PBXFileReference section */
 		1F8685CA9F54F390E42AEED9 /* Pods-SwiftUIOutput.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIOutput.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIOutput/Pods-SwiftUIOutput.release.xcconfig"; sourceTree = "<group>"; };
 		906A23C78F1C28D25753F751 /* Pods_SwiftUIOutput.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIOutput.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1B43462B91ABC6001D32D7 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		CB2A0A8C2B6A2448005C8F50 /* SwiftUIOutput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIOutput.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2A0A8F2B6A2448005C8F50 /* SwiftUIOutputApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIOutputApp.swift; sourceTree = "<group>"; };
 		CB2A0A912B6A2448005C8F50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				CB2A0A8F2B6A2448005C8F50 /* SwiftUIOutputApp.swift */,
 				CB2A0A912B6A2448005C8F50 /* ContentView.swift */,
+				CB1B43462B91ABC6001D32D7 /* SecondView.swift */,
 				CB2A0A932B6A244A005C8F50 /* Assets.xcassets */,
 				CB2A0A952B6A244A005C8F50 /* Preview Content */,
 			);
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1B43472B91ABC6001D32D7 /* SecondView.swift in Sources */,
 				CB2A0A922B6A2448005C8F50 /* ContentView.swift in Sources */,
 				CB2A0A902B6A2448005C8F50 /* SwiftUIOutputApp.swift in Sources */,
 			);
