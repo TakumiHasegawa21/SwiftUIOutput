@@ -12,7 +12,7 @@ import SwiftUI
 struct SwiftUIOutputApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RoundedCornerExample()
         }
     }
 }
