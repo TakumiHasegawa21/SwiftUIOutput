@@ -11,12 +11,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("星です")
+                .font(.headline)
+                .padding()
+
+            // SF Symbolsを使用してシステムアイコンを表示
+            Image(systemName: "star.fill")
+                .resizable()
+                .frame(width: 50, height: 50)
+                .foregroundColor(.yellow) // アイコンの色を変更
         }
-        .padding()
     }
 }
 
