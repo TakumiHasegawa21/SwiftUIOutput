@@ -11,12 +11,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("日本地図です")
+                .font(.headline)
+                .padding()
+
+            // アセットカタログから画像を表示
+            Image("japan_map")
+                .resizable() // 画像のサイズを変更可能にする
+                .aspectRatio(contentMode: .fit) // アスペクト比を保持
+                .frame(width: 200, height: 200) // フレームサイズを指定
+                .clipped() // フレーム外を切り取る
         }
-        .padding()
     }
 }
 
