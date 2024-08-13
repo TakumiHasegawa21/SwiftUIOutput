@@ -11,16 +11,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("日本地図です")
+            Text("星です")
                 .font(.headline)
                 .padding()
 
-            // アセットカタログから画像を表示
-            Image("japan_map")
-                .resizable() // 画像のサイズを変更可能にする
-                .aspectRatio(contentMode: .fit) // アスペクト比を保持
-                .frame(width: 200, height: 200) // フレームサイズを指定
-                .clipped() // フレーム外を切り取る
+            // SF Symbolsを使用してシステムアイコンを表示
+            Image(systemName: "star.fill")
+                .resizable()
+                .frame(width: 50, height: 50)
+                .foregroundColor(.yellow) // アイコンの色を変更
         }
     }
 }
